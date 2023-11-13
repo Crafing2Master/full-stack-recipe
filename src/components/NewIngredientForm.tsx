@@ -1,7 +1,7 @@
 'use client'
 
 import {useFormState, useFormStatus} from "react-dom"
-import {createIngredient} from "@/app/resources/actions";
+import {createIngredient} from "@/resources/actions";
 import {usePathname} from "next/navigation";
 
 function NewButton(){

@@ -1,6 +1,6 @@
 'use client'
 
-import NewRecipeForm from "@/app/components/NewRecipeForm";
+import NewRecipeForm from "@/components/NewRecipeForm";
 
 export default function Page() {
     return(

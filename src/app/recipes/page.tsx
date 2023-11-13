@@ -1,8 +1,8 @@
 import db from "@/models/db";
 import {recipeSchema} from "@/models/schema";
-import Card from "@/app/components/Card";
+import Card from "@/components/Card";
 import Link from "next/link";
-import DeleteRecipeForm from "@/app/components/DeleteRecipeForm";
+import DeleteRecipeForm from "@/components/DeleteRecipeForm";
 
 export default async function Page() {
     const allRecipes = await db.select()

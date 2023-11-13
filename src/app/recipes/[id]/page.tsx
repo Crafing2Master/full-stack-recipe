@@ -1,10 +1,10 @@
 import db from "@/models/db";
 import {ingredientSchema, recipeSchema} from "@/models/schema";
 import {eq} from "drizzle-orm";
-import DeleteRecipeForm from "@/app/components/DeleteRecipeForm";
+import DeleteRecipeForm from "@/components/DeleteRecipeForm";
 import Link from "next/link";
-import NewIngredientForm from "@/app/components/NewIngredientForm";
-import DeleteIngredientForm from "@/app/components/DeleteIngredientForm";
+import NewIngredientForm from "@/components/NewIngredientForm";
+import DeleteIngredientForm from "@/components/DeleteIngredientForm";
 
 export default async function Page({params}: { params: { id: string } }) {
     const byId = Number(params.id);

@@ -1,7 +1,7 @@
 import db from "@/models/db";
 import {recipeSchema} from "@/models/schema";
 import {eq} from "drizzle-orm";
-import EditRecipeForm from "@/app/components/EditRecipeForm";
+import EditRecipeForm from "@/components/EditRecipeForm";
 
 export default async function Page({params}: { params: { id: string } }) {
     const byId = Number(params.id);

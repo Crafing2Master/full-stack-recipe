@@ -1,7 +1,7 @@
 'use client'
 
 import {useFormState, useFormStatus} from "react-dom"
-import {createRecipe, editRecipe} from "@/app/resources/actions";
+import {createRecipe, editRecipe} from "@/resources/actions";
 import {usePathname} from "next/navigation";
 
 function EditButton(){
