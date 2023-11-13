@@ -20,8 +20,8 @@ export default async function Page({params}: { params: { id: string } }) {
         name: ingredientSchema.name
     }).from(ingredientSchema)
         .where(eq(ingredientSchema.recipe_id, byId))
-    const hours = Math.floor(data[0].duration / 60);
-    const minutes = data[0].duration % 60;
+    const hours = Math.floor(data[0].duration as number / 60);
+    const minutes = data[0].duration as number % 60;
     const formattedDuration = hours === 0 ? `${minutes} minutes` :`${hours} hours ${minutes} minutes`
     return(
         <div className="m-3 p-3 bg-green-200 rounded-xl shadow-xl transition-all duration-700 hover:shadow-2xl ">
