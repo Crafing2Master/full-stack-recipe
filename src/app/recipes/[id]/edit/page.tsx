@@ -15,7 +15,7 @@ export default async function Page({params}: { params: { id: string } }) {
         .where(eq(recipeSchema.id, byId))
     return(
         <div className="m-3 p-3 bg-green-200 rounded-xl shadow-xl transition-all duration-700 hover:shadow-2xl flex justify-between">
-            <EditRecipeForm recipe={data[0]} />
+            <EditRecipeForm recipe={data[0] as {id: number, duration: number, name: string}} />
         </div>
     )
 }
